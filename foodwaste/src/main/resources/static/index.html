@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Zero Waste - Food Items</title>
+</head>
+<body>
+  <h1>Food Waste Items</h1>
+  <button onclick="loadFoodItems()">Load Food Items</button>
+  <div id="food-list"></div>
+
+  <script>
+    function loadFoodItems() {
+      fetch('http://localhost:8080/foodwaste/fooditems')  // Updated URL
+        .then(response => response.json())
+        .then(data => {
+          let output = '<ul>';
+          data.forEach(item => {
+            output += `<li>${item.name} - Quantity: ${item.quantity}</li>`;
+          });
+          output += '</ul>';
+          document.getElementById('food-list').innerHTML = output;
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          document.getElementById('food-list').innerHTML = 'Error loading data';
+        });
+    }
+  </script>
+</body>
+</html>
