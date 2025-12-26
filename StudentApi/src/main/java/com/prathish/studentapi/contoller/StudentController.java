@@ -1,7 +1,7 @@
-package com.prathish.studentapi;
+package com.prathish.studentapi.contoller;
 
+import com.prathish.studentapi.service.StudentService;
 import com.prathish.studentapi.models.Students;
-import org.apache.coyote.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;

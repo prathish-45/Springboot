@@ -1,6 +1,7 @@
-package com.prathish.studentapi;
+package com.prathish.studentapi.service;
 
 import com.prathish.studentapi.models.Students;
+import com.prathish.studentapi.repository.StudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;

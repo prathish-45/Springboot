@@ -1,4 +1,4 @@
-package com.prathish.studentapi;
+package com.prathish.studentapi.repository;
 
 import com.prathish.studentapi.models.Students;
 import org.springframework.data.jpa.repository.JpaRepository;
