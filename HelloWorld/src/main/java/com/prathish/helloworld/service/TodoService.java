@@ -1,6 +1,7 @@
-package com.prathish.helloworld;
+package com.prathish.helloworld.service;
 
 import com.prathish.helloworld.models.Todo;
+import com.prathish.helloworld.repository.TodoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

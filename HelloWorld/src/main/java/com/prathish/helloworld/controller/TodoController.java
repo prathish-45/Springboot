@@ -1,5 +1,6 @@
-package com.prathish.helloworld;
+package com.prathish.helloworld.controller;
 
+import com.prathish.helloworld.service.TodoService;
 import com.prathish.helloworld.models.Todo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

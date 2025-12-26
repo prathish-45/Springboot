@@ -1,8 +1,7 @@
-package com.prathish.helloworld;
+package com.prathish.helloworld.repository;
 
 import com.prathish.helloworld.models.Todo;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.stereotype.Component;
 
 
 public interface TodoRepository extends JpaRepository<Todo, Long> {
